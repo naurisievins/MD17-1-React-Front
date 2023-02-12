@@ -31,7 +31,7 @@ function Post() {
     .then(({ data }) => data[0] )
   })
 
-  const { isLoading, error, data: comments } = useQuery({
+  const { data: comments } = useQuery({
     queryKey: ["comments"],
     queryFn: () =>
     axios.get(`http://localhost:3004/comments/${id}`)
@@ -123,8 +123,11 @@ function Post() {
     mutationComment.mutate({comment, author})
   }
 
+  if (postDataLoading) {
+    return <h1>Loading...</h1>
+  }
 
-  if (!postData) {
+  if (!postData && !postDataLoading) {
     return <h1>No data found!</h1>
   }
   
