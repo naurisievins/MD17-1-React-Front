@@ -50,7 +50,7 @@ function Blog() {
   return (
       <div className={styles.cardContainer}>
         <ToastContainer />
-        <h2 className={styles.title}>This is blog section</h2>
+        <h2 className={styles.blog_title}>This is blog section</h2>
         {data.map((post: Form) => (
           <div className={styles.card} key={post.id}>
             <img src={post.image_link} alt={post.title} />
