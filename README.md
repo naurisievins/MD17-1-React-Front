@@ -4,4 +4,4 @@
 
 `npm i` and then `npm run dev`
 
-Then https://github.com/naurisievins/MD17-2-ExpressJs-MySQL-Docker-Back
+Run Backend: https://github.com/naurisievins/MD17-2-ExpressJs-MySQL-Docker-Back
