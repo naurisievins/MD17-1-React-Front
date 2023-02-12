@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  display: flex;
+  background-color: rgb(35 35 36);
+  color:rgb(176, 177, 179);
+  line-height: 2;
+  padding: 10px;
+  border-radius: 7px;
+  gap: 30px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: rgb(22, 22, 22);
+}
